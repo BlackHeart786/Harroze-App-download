@@ -20,8 +20,7 @@ export default function Home() {
       <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#ff1d20] rounded-full mix-blend-screen filter blur-[150px] opacity-20 pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-5%] w-[600px] h-[600px] bg-orange-600 rounded-full mix-blend-screen filter blur-[180px] opacity-10 pointer-events-none"></div>
 
-      {/* --- NAVBAR (Glassmorphism) --- */}
-     {/* --- NEW PREMIUM NAVBAR --- */}
+    
       <nav className="fixed top-6 left-0 right-0 z-50 max-w-6xl mx-auto px-6 py-3 rounded-full bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/10 shadow-2xl flex justify-between items-center transition-all duration-300 hover:border-[#ff1d20]/30 hover:shadow-[0_0_30px_rgba(255,29,32,0.1)]">
         
         {/* LOGO (Big & Clean) */}
@@ -30,7 +29,7 @@ export default function Home() {
           <img 
             src="/harroze_tr_logo.png" 
             alt="Harroze Logo" 
-            className="relative w-16 h-16 object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-300" 
+            className="relative w-16 h-17 object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-300" 
           />
         </Link>
 
