@@ -21,16 +21,39 @@ export default function Home() {
       <div className="absolute bottom-[-10%] right-[-5%] w-[600px] h-[600px] bg-orange-600 rounded-full mix-blend-screen filter blur-[180px] opacity-10 pointer-events-none"></div>
 
       {/* --- NAVBAR (Glassmorphism) --- */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 max-w-7xl mx-auto mt-4 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 mx-4 md:mx-auto">
-        <h1 className="text-2xl font-extrabold tracking-tight">
-          <span className="text-white">Harroze</span>
-          <span className="text-[#ff1d20]">.</span>
-        </h1>
-        <div className="flex items-center gap-6">
+     {/* --- NEW PREMIUM NAVBAR --- */}
+      <nav className="fixed top-6 left-0 right-0 z-50 max-w-6xl mx-auto px-6 py-3 rounded-full bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/10 shadow-2xl flex justify-between items-center transition-all duration-300 hover:border-[#ff1d20]/30 hover:shadow-[0_0_30px_rgba(255,29,32,0.1)]">
         
-          <button className="bg-[#ff1d20] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-red-600 transition shadow-[0_0_20px_rgba(255,29,32,0.4)]">
-            Get App
-          </button>
+        {/* LOGO (Big & Clean) */}
+        <Link href="/" className="group relative">
+          <div className="absolute inset-0 bg-[#ff1d20] blur-[20px] opacity-0 group-hover:opacity-40 transition duration-500 rounded-full"></div>
+          <img 
+            src="/harroze_tr_logo.png" 
+            alt="Harroze Logo" 
+            className="relative w-16 h-16 object-contain drop-shadow-lg transform group-hover:scale-110 transition duration-300" 
+          />
+        </Link>
+
+        {/* Right Side Actions */}
+        <div className="flex items-center gap-8">
+          
+         
+
+          {/* Premium 'Get App' Button */}
+          <a 
+            href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/app-release.apk"
+            className="group relative bg-[#ff1d20] text-white px-8 py-3 rounded-full font-bold text-sm overflow-hidden shadow-[0_10px_20px_rgba(255,29,32,0.3)] transition-transform active:scale-95"
+          >
+            {/* Button Shine Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+            
+            <span className="relative flex items-center gap-2">
+              Get App 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </span>
+          </a>
         </div>
       </nav>
 
@@ -55,7 +78,7 @@ export default function Home() {
           {/* ACTIONS */}
           <div className="flex flex-col items-center md:items-start gap-6">
      <a
-              href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/download/v1.0.9/app-release.apk"
+              href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/app-release.apk"
               className="group relative flex items-center gap-4 bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition duration-300 shadow-xl"
             >
               <div className="p-2 bg-white-100 rounded-lg  transition">
@@ -192,7 +215,7 @@ export default function Home() {
       <footer className="py-10 text-center border-t border-white/10 bg-[#0d0c0b]">
         <p className="text-gray-500 mb-4">&copy; 2026 Harroze Biryani. </p>
         <div className="flex justify-center gap-6 text-sm font-medium text-gray-400">
-         
+         <Link href="https://www.gooddevs.org/" className="hover:text-[#ff1d20] transition">Developed & Maintained by GoodDevs</Link>
         </div>
       </footer>
     </main>
