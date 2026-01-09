@@ -40,7 +40,7 @@ export default function Home() {
 
           {/* Premium 'Get App' Button */}
           <a 
-            href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/app-release.apk"
+            href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/Harroze.apk"
             className="group relative bg-[#ff1d20] text-white px-8 py-3 rounded-full font-bold text-sm overflow-hidden shadow-[0_10px_20px_rgba(255,29,32,0.3)] transition-transform active:scale-95"
           >
             {/* Button Shine Effect */}
@@ -77,7 +77,7 @@ export default function Home() {
           {/* ACTIONS */}
           <div className="flex flex-col items-center md:items-start gap-6">
      <a
-              href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/app-release.apk"
+              href="https://github.com/BlackHeart786/HARROZE-BIRIYANI-app-release/releases/latest/download/Harroze.apk"
               className="group relative flex items-center gap-4 bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition duration-300 shadow-xl"
             >
               <div className="p-2 bg-white-100 rounded-lg  transition">
